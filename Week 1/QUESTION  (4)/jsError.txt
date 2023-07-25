@@ -1,0 +1,22 @@
+Test Cases Passed: 
+0 /1113
+For Input: 
+9 2
+1 2 3 4 5 6 7 8 9
+Your Output:
+/home/d26f739cbc92981c0227582d5c9431d6.js:54
+        let input_ar1 = readLine().split(' ').map(x=>parseInt(x));
+                                  ^
+
+TypeError: Cannot read property 'split' of undefined
+    at main (/home/d26f739cbc92981c0227582d5c9431d6.js:54:35)
+    at Socket.<anonymous> (/home/d26f739cbc92981c0227582d5c9431d6.js:18:5)
+    at Socket.emit (events.js:326:22)
+    at endReadableNT (_stream_readable.js:1223:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21).................
+
+Its Correct output is:
+8
+
+
+-> Driver Code Error!!
