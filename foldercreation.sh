@@ -11,7 +11,11 @@ create_subdirectories() {
     cd "$week_folder"
 
     for (( i = 1; i <= num_questions; i++ )); do
-        mkdir "Question $i"
+        local question_folder="Question $i"
+        mkdir "$question_folder"
+
+        # Create question.txt file inside the question folder
+        touch "$question_folder/question.txt"
     done
 
     echo "Week $1 Folder with $num_questions Subdirectories has been created."
@@ -32,4 +36,3 @@ if [[ ! "$num_questions" =~ ^[0-9]+$ ]]; then
 fi
 
 create_subdirectories "$week_number" "$num_questions"
-
